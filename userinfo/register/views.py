@@ -13,6 +13,10 @@ from django.core.files.storage import default_storage
 from .NER_model import data
 from .ner_09 import create_json
 import requests
+import logging
+
+
+
 
 secret_key =settings.SECRET_KEY
 
@@ -30,7 +34,12 @@ def insert_details(request):
         return render(request,'index.html',status=200)
     except Exception as e:
         # Handle the exception or log the error
-        return render(request, 'error.html', {'message': str(e)},status=500)
+        logger = logging.getLogger(__name__)
+        logger.exception(str(e))
+        return render(request, 'error.html', {'message': 'An error occurred. Please try again later.'}, status=500)
+
+        # # Handle the exception or log the error
+        # return render(request, 'error.html', {'message': str(e)},status=500)
         
     
         
@@ -68,7 +77,11 @@ class takeprofile(APIView):
             return render(request,'index.html',status=200) 
         except Exception as e:
             # Handle the exception or log the error
-            return render(request, 'error.html', {'message': str(e)},status=500)
+            logger = logging.getLogger(__name__)
+            logger.exception(str(e))
+            return render(request, 'error.html', {'message': 'An error occurred. Please try again later.'}, status=500)
+
+            # return render(request, 'error.html', {'message': str(e)},status=500)
             
     
 
@@ -88,7 +101,11 @@ class reguserprofile(APIView):
             return JsonResponse(result, safe=False)
         except Exception as e:
             # Handle the exception or log the error
-            return render(request, 'error.html', {'message': str(e)},status=500)
+            logger = logging.getLogger(__name__)
+            logger.exception(str(e))
+            return render(request, 'error.html', {'message': 'An error occurred. Please try again later.'}, status=500)
+
+            # return render(request, 'error.html', {'message': str(e)},status=500)
             
     
     
@@ -107,7 +124,11 @@ class reguserprofile(APIView):
             return JsonResponse(result, safe=False)
         except Exception as e:
             # Handle the exception or log the error
-            return render(request, 'error.html', {'message': str(e)},status=500)
+            logger = logging.getLogger(__name__)
+            logger.exception(str(e))
+            return render(request, 'error.html', {'message': 'An error occurred. Please try again later.'}, status=500)
+
+            # return render(request, 'error.html', {'message': str(e)},status=500)
             
         
 
@@ -145,7 +166,11 @@ def login_view(request):
         
     except Exception as e:
         # Handle the exception or log the error
-        return render(request, 'error.html', {'message': str(e)}, status=500)
+        logger = logging.getLogger(__name__)
+        logger.exception(str(e))
+        return render(request, 'error.html', {'message': 'An error occurred. Please try again later.'}, status=500)
+
+        # return render(request, 'error.html', {'message': str(e)}, status=500)
     
     
         
@@ -155,7 +180,11 @@ def forgot_password(request):
         return render(request, 'forgotpassword.html',status=200)
     except Exception as e:
         # Handle the exception or log the error
-        return render(request, 'error.html', {'message': str(e)},status=500)
+        logger = logging.getLogger(__name__)
+        logger.exception(str(e))
+        return render(request, 'error.html', {'message': 'An error occurred. Please try again later.'}, status=500)
+
+        # return render(request, 'error.html', {'message': str(e)},status=500)
         
     
         
@@ -176,7 +205,11 @@ def mailid_auth(request):
                      return render(request,'index.html',{'messages':'The email address provided does not exist in our records. Please register a new account.'}, status=400)               
     except Exception as e:
         # Handle the exception or log the error
-        return render(request, 'error.html', {'message': str(e)}, status=500)
+        logger = logging.getLogger(__name__)
+        logger.exception(str(e))
+        return render(request, 'error.html', {'message': 'An error occurred. Please try again later.'}, status=500)
+
+        # return render(request, 'error.html', {'message': str(e)}, status=500)
         
 def reset_password(request):
     try:
@@ -193,7 +226,11 @@ def reset_password(request):
             return render(request,'index.html')      
     except Exception as e:
         # Handle the exception or log the error
-        return render(request, 'error.html', {'message': str(e)},status=500)
+        logger = logging.getLogger(__name__)
+        logger.exception(str(e))
+        return render(request, 'error.html', {'message': 'An error occurred. Please try again later.'}, status=500)
+
+        # return render(request, 'error.html', {'message': str(e)},status=500)
              
         
 # def upload_view(request):
@@ -259,7 +296,11 @@ def upload_view(request):
             return render(request,'message.html')
     except Exception as e:
         # Handle the exception or log the error
-        return render(request, 'error.html', {'message': str(e)},status=500)
+        logger = logging.getLogger(__name__)
+        logger.exception(str(e))
+        return render(request, 'error.html', {'message': 'An error occurred. Please try again later.'}, status=500)
+
+        # return render(request, 'error.html', {'message': str(e)},status=500)
     
 
     

@@ -1,0 +1,127 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+C:\Users\Afitha\internpro\userinfo\register\views.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+HTTPConnectionPool(host='ec2-43-205-15-58.ap-south-1.compute.amazonaws.com', port=9864): Max retries exceeded with url: /webhdfs/v1/cv/SweetySayin.pdf?op=CREATE&user.name=ubuntu&namenoderpcaddress=ec2-43-205-15-58.ap-south-1.compute.amazonaws.com:9000&createflag=&createparent=true&overwrite=false (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002157E941DE0>, 'Connection to ec2-43-205-15-58.ap-south-1.compute.amazonaws.com timed out. (connect timeout=None)'))
+Traceback (most recent call last):
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Users\Afitha\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1283, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\Afitha\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1329, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\Afitha\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1278, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\Afitha\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 1038, in _send_output
+    self.send(msg)
+  File "C:\Users\Afitha\AppData\Local\Programs\Python\Python310\lib\http\client.py", line 976, in send
+    self.connect()
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\urllib3\connection.py", line 179, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPConnection object at 0x000002157E941DE0>, 'Connection to ec2-43-205-15-58.ap-south-1.compute.amazonaws.com timed out. (connect timeout=None)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\requests\adapters.py", line 487, in send
+    resp = conn.urlopen(
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='ec2-43-205-15-58.ap-south-1.compute.amazonaws.com', port=9864): Max retries exceeded with url: /webhdfs/v1/cv/SweetySayin.pdf?op=CREATE&user.name=ubuntu&namenoderpcaddress=ec2-43-205-15-58.ap-south-1.compute.amazonaws.com:9000&createflag=&createparent=true&overwrite=false (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002157E941DE0>, 'Connection to ec2-43-205-15-58.ap-south-1.compute.amazonaws.com timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Afitha\internpro\userinfo\register\views.py", line 277, in upload_view
+    response = requests.put(url, data=file, headers=headers)
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\requests\api.py", line 130, in put
+    return request("put", url, data=data, **kwargs)
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\Afitha\Envs\internships\lib\site-packages\requests\adapters.py", line 508, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPConnectionPool(host='ec2-43-205-15-58.ap-south-1.compute.amazonaws.com', port=9864): Max retries exceeded with url: /webhdfs/v1/cv/SweetySayin.pdf?op=CREATE&user.name=ubuntu&namenoderpcaddress=ec2-43-205-15-58.ap-south-1.compute.amazonaws.com:9000&createflag=&createparent=true&overwrite=false (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000002157E941DE0>, 'Connection to ec2-43-205-15-58.ap-south-1.compute.amazonaws.com timed out. (connect timeout=None)'))
+Internal Server Error: /upload/

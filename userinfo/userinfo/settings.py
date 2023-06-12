@@ -31,6 +31,31 @@ ALLOWED_HOSTS = []
 # # Generate a random secret key if it doesn't exist
 # SECRET_KEY = os.environ.get('SECRET_KEY', os.urandom(32).hex())
 
+import logging.config
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': 'error.log',  # Specify the path and filename for the log file
+        },
+    },
+    'root': {
+        'handlers': ['console', 'file'],
+        'level': 'INFO',  # Set the desired logging level
+    },
+}
+
+
+
+
+
+
 # Application definition
 
 INSTALLED_APPS = [
